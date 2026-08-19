@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painéis de Vendas</title>
+<style>
+  :root {
+    --bg: #0B0D12;
+    --surface: #12151C;
+    --border: #262B36;
+    --border-destaque: #2F6FEE;
+    --ink: #F2F3F5;
+    --ink-soft: #9AA1AE;
+    --ink-faint: #6B7280;
+    --accent: #4F8CFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 40px 20px 64px; }
+
+  header { text-align: center; margin-bottom: 32px; }
+  header h1 { margin: 0 0 6px; font-size: 26px; font-weight: 800; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--ink-soft); font-size: 14px; }
+
+  h2.secao {
+    font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--ink-faint); margin: 28px 0 12px; padding: 0 2px;
+  }
+
+  a.botao {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    width: 100%; text-decoration: none; color: var(--ink);
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 16px 18px; margin-bottom: 10px; font-size: 15.5px; font-weight: 700;
+    transition: border-color 0.15s ease, transform 0.1s ease;
+  }
+  a.botao:active { transform: scale(0.99); }
+  a.botao .seta { color: var(--ink-faint); font-size: 18px; flex: none; }
+  a.botao.destaque { border-color: var(--border-destaque); }
+  a.botao.destaque .seta { color: var(--accent); }
+  a.botao:hover { border-color: var(--accent); }
+
+  .grupo-sup {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 14px 16px 16px; margin-bottom: 10px;
+  }
+  .grupo-sup .nome { font-size: 15.5px; font-weight: 800; margin-bottom: 10px; }
+  .grupo-sup .linhas { display: flex; gap: 8px; }
+  .grupo-sup a.mini {
+    flex: 1; text-decoration: none; color: var(--ink-soft);
+    background: #191D26; border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 12px; font-size: 13px; font-weight: 700; text-align: center;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .grupo-sup a.mini:hover { border-color: var(--accent); color: var(--ink); }
+
+  footer { text-align: center; margin-top: 32px; font-size: 11.5px; color: var(--ink-faint); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Painéis de Vendas</h1>
+    <p>Toque em um botão para abrir o relatório</p>
+  </header>
+
+  <h2 class="secao">Visão geral</h2>
+  <a class="botao destaque" href="https://edmarr123.github.io/painel-4-pilares/painel_gerente.html">
+    Painel do Gerente <span class="seta">&rarr;</span>
+  </a>
+  <a class="botao destaque" href="https://edmarr123.github.io/painel-4-pilares/painel.html">
+    Geral — Todos os Supervisores <span class="seta">&rarr;</span>
+  </a>
+  <a class="botao destaque" href="https://edmarr123.github.io/painel-departamentos/painel.html">
+    Painel Departamentos <span class="seta">&rarr;</span>
+  </a>
+
+  <h2 class="secao">Por supervisor</h2>
+  <div class="grupo-sup">
+    <div class="nome">Edmar</div>
+    <div class="linhas">
+      <a class="mini" href="https://edmarr123.github.io/painel-4-pilares/supervisores/painel_EDMAR.html">4 Pilares</a>
+      <a class="mini" href="https://edmarr123.github.io/painel-departamentos/supervisores/painel_EDMAR.html">Departamentos</a>
+    </div>
+  </div>
+  <div class="grupo-sup">
+    <div class="nome">Leandro</div>
+    <div class="linhas">
+      <a class="mini" href="https://edmarr123.github.io/painel-4-pilares/supervisores/painel_LEANDRO.html">4 Pilares</a>
+      <a class="mini" href="https://edmarr123.github.io/painel-departamentos/supervisores/painel_LEANDRO.html">Departamentos</a>
+    </div>
+  </div>
+  <div class="grupo-sup">
+    <div class="nome">Flaviane</div>
+    <div class="linhas">
+      <a class="mini" href="https://edmarr123.github.io/painel-4-pilares/supervisores/painel_FLAVIANE.html">4 Pilares</a>
+      <a class="mini" href="https://edmarr123.github.io/painel-departamentos/supervisores/painel_FLAVIANE.html">Departamentos</a>
+    </div>
+  </div>
+  <div class="grupo-sup">
+    <div class="nome">Ideglan</div>
+    <div class="linhas">
+      <a class="mini" href="https://edmarr123.github.io/painel-4-pilares/supervisores/painel_IDEGLAN.html">4 Pilares</a>
+      <a class="mini" href="https://edmarr123.github.io/painel-departamentos/supervisores/painel_IDEGLAN.html">Departamentos</a>
+    </div>
+  </div>
+  <div class="grupo-sup">
+    <div class="nome">Ricardo</div>
+    <div class="linhas">
+      <a class="mini" href="https://edmarr123.github.io/painel-4-pilares/supervisores/painel_RICARDO.html">4 Pilares</a>
+      <a class="mini" href="https://edmarr123.github.io/painel-departamentos/supervisores/painel_RICARDO.html">Departamentos</a>
+    </div>
+  </div>
+  <div class="grupo-sup">
+    <div class="nome">Richard</div>
+    <div class="linhas">
+      <a class="mini" href="https://edmarr123.github.io/painel-4-pilares/supervisores/painel_RICHARD.html">4 Pilares</a>
+      <a class="mini" href="https://edmarr123.github.io/painel-departamentos/supervisores/painel_RICHARD.html">Departamentos</a>
+    </div>
+  </div>
+  <div class="grupo-sup">
+    <div class="nome">Rodrigo</div>
+    <div class="linhas">
+      <a class="mini" href="https://edmarr123.github.io/painel-4-pilares/supervisores/painel_RODRIGO.html">4 Pilares</a>
+      <a class="mini" href="https://edmarr123.github.io/painel-departamentos/supervisores/painel_RODRIGO.html">Departamentos</a>
+    </div>
+  </div>
+
+  <footer>T&amp;T Alimentos — painéis atualizados manualmente</footer>
+</div>
+</body>
+</html>
